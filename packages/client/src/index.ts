@@ -47,6 +47,8 @@ export { postOverallFeedback } from "./utils/postOverallFeedback";
 
 // Export server utilities for proxy reuse
 export { constructOverrides } from "./utils/overrides";
+export { isValidSocketEvent } from "./utils/events";
+export { PACKAGE_VERSION } from "./version";
 
 export class Conversation extends BaseConversation {
   public static startSession(options: PartialOptions): Promise<Conversation> {
