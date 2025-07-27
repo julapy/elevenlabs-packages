@@ -45,6 +45,9 @@ export { WebRTCConnection } from "./utils/WebRTCConnection";
 // Export other utilities
 export { postOverallFeedback } from "./utils/postOverallFeedback";
 
+// Export server utilities for proxy reuse
+export { constructOverrides } from "./utils/overrides";
+
 export class Conversation extends BaseConversation {
   public static startSession(options: PartialOptions): Promise<Conversation> {
     return options.textOnly ? TextConversation.startSession(options) : VoiceConversation.startSession(options);
