@@ -25,6 +25,11 @@ export { WebSocketConnection } from "./utils/WebSocketConnection";
 export { WebRTCConnection } from "./utils/WebRTCConnection";
 export { postOverallFeedback } from "./utils/postOverallFeedback";
 
+// Export audio utilities for proxy reuse
+export { Input } from "./utils/input";
+export { Output } from "./utils/output";
+export { arrayBufferToBase64, base64ToArrayBuffer } from "./utils/audio";
+
 export class Conversation extends BaseConversation {
   public static startSession(options: PartialOptions): Promise<Conversation> {
     return options.textOnly
