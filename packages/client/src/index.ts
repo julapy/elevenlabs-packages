@@ -36,6 +36,7 @@ export type {
   OnMessageCallback,
 } from "./utils/BaseConnection";
 export { parseFormat } from "./utils/BaseConnection";
+export { BaseConnection } from "./utils/BaseConnection";
 
 // Export connection factories and implementations
 export { createConnection } from "./utils/ConnectionFactory";
