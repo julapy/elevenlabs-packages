@@ -12,19 +12,30 @@ export { Input } from "./utils/input";
 export { Output } from "./utils/output";
 export { arrayBufferToBase64, base64ToArrayBuffer } from "./utils/audio";
 
-// Export event types for proxy reuse
 export type {
+  // incoming events
   IncomingSocketEvent,
-  OutgoingSocketEvent,
-  AgentAudioEvent,
-  AgentResponseEvent,
   UserTranscriptionEvent,
+  AgentResponseEvent,
+  AgentAudioEvent,
   InterruptionEvent,
-  ClientToolCallEvent,
+  InternalTentativeAgentResponseEvent,
   ConfigEvent,
+  PingEvent,
+  ClientToolCallEvent,
+  // outgoing events
+  OutgoingSocketEvent,
+  PongEvent,
+  UserAudioEvent,
+  InitiationClientDataEvent,
+  UserFeedbackEvent,
+  ClientToolResultEvent,
+  ContextualUpdateEvent,
+  UserMessageEvent,
+  UserActivityEvent,
+  MCPToolApprovalResultEvent,
 } from "./utils/events";
 
-// Export connection utilities for proxy reuse
 export type {
   SessionConfig,
   BaseSessionConfig,
