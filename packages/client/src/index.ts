@@ -28,6 +28,7 @@ export type {
 export type {
   SessionConfig,
   BaseSessionConfig,
+  PrivateWebSocketSessionConfig,
   DisconnectionDetails,
   Language,
   ConnectionType,
@@ -43,7 +44,6 @@ export { createConnection } from "./utils/ConnectionFactory";
 export { WebSocketConnection } from "./utils/WebSocketConnection";
 export { WebRTCConnection } from "./utils/WebRTCConnection";
 
-// Export other utilities
 export { postOverallFeedback } from "./utils/postOverallFeedback";
 
 // Export server utilities for proxy reuse
