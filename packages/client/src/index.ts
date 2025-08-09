@@ -5,12 +5,14 @@ import { VoiceConversation } from "./VoiceConversation";
 // Export base conversation types and utilities
 export type { Mode, Role, Options, PartialOptions, ClientToolsConfig, Callbacks, Status } from "./BaseConversation";
 export { BaseConversation } from "./BaseConversation";
+export { VoiceConversation } from "./VoiceConversation";
 
 // Export input/audio utilities
 export type { InputConfig } from "./utils/input";
 export { Input } from "./utils/input";
 export { Output } from "./utils/output";
 export { arrayBufferToBase64, base64ToArrayBuffer } from "./utils/audio";
+export { applyDelay } from "./utils/applyDelay";
 
 export type {
   // incoming events
